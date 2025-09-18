@@ -5,6 +5,9 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+body{
+    background-color: #9ac7f1;
+}
 .nav-bar{
     background-color: #000000;
     width: 100%;
@@ -38,4 +41,36 @@ ul li:hover{
 
 .main-menu{
     margin-right: 30px;
+}
+
+.menuBtn, .closeBtn{
+    font-size: 28px;
+    margin: 15px;
+    display: none;
+}
+
+
+@media only screen and (max-width: 780px){
+    ul {
+        display: none;
+    }
+    
+    ul li{
+        display: block;
+        margin: 15px;
+    }
+    .menuBtn{
+        display: block;
+    }
+    .nav-title{
+        font-size: 24px;
+    }
+    .menu{
+        background-color: #3b3131;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        text-align: center;
+    }
 }
