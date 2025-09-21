@@ -10,10 +10,14 @@ header{
     height: 80PX;
     box-shadow: 0 4px 12px 0 rgba(0,0,0,.05);
     background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo{
     width: 70px;
+    margin-right: 20px;
 }
 
 nav{
@@ -23,3 +27,68 @@ nav{
     width: 94%;
     margin: 0 auto;
 }
+
+.nav-left, .nav-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    font-weight: 600;
+    font-style: normal;
+    margin: 0 15px;
+    color: rgb(41, 37, 37);
+    font-size: 13px;
+}
+
+.studio{
+    position: relative;
+}
+
+.studio span{
+    color: rgb(248, 27, 27);
+    position: absolute;
+    top: -5px;
+    left: 52px;
+    font-size: 10px;
+}
+
+.search-box{
+    background-color: rgb(236, 236, 236);
+    line-height: 40px;
+    width: 350px;
+    border-radius: 5px;
+}
+
+.search-box input{
+    background: transparent;
+    outline: none;
+    border: 0;
+    width: 85%;
+    font-size: 12px;
+}
+
+.nav-right .search-box i{
+    font-size: 13px;
+    margin: 0 15px 0 10px;
+    color: rgb(77, 76, 76);
+}
+
+.nav-right div{
+    margin: 0 12px;
+    text-align: center;
+}
+.nav-right div p{
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(77, 76, 76);
+}
+.nav-right div i{
+    font-size: 18px;
+    color: rgb(77, 76, 76);
+}
+
+
