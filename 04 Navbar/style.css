@@ -1,10 +1,41 @@
 *{
-    margin: 0;
-    padding: o;
-    box-sizing: border-box;
+   
     font-family: "Poppins", sans-serif;
 }
 
 body{
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
     background-color: lightblue;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(109, 106, 102);
+    color: rgb(255, 255, 255);
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    margin-inline: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    margin-left: 11px;
+}
+
+.logo{
+    font-size: 18px;
+    margin-left: 15px;
 }
