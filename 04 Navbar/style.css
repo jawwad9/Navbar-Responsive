@@ -1,20 +1,22 @@
 *{
-   
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 
 body{
-    margin: 0;
-    padding: o;
-    box-sizing: border-box;
     background-color: lightblue;
 }
 
 nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: rgb(109, 106, 102);
     color: rgb(255, 255, 255);
+    height: 70px;
+    width: 100%;
 }
 
 nav ul{
@@ -35,7 +37,42 @@ ul li a{
     margin-left: 11px;
 }
 
+ul li a:hover, ul li .active{
+    color: rgb(103, 218, 118);
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+ul li .btn{
+    padding: 4px 20px;
+    font-size: 18px;
+    background-color: rgb(128, 209, 247);
+    color: rgb(255, 255, 255);
+}
+
 .logo{
     font-size: 18px;
     margin-left: 15px;
+}
+
+.icon{
+    align-items: center;
+    font-size: 30px;
+    margin-right: 12px;
+    display: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:750px){
+    nav ul{
+        display: none;
+    }
+    .icon{
+        display: flex;
+    }
+    .showData{
+        display: block;
+        position: absolute;
+        height: 70px;
+        width: 100%;
+    }
 }
