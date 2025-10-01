@@ -34,7 +34,7 @@ nav{
     justify-content: center;
 }
 
-ul li{
+.nav-menu li{
     list-style: none;
     display: inline-block;
     font-weight: 600;
@@ -104,6 +104,10 @@ ul li{
     .nav-left i{
         display: block;
     }
+
+    .showData{
+        display: flex;
+    }
     .logo{
         width: 60px;
         margin-right: 10px;
@@ -133,8 +137,72 @@ ul li{
 }
 
 
-@media only screen and (max-width:1250px){
+@media only screen and (max-width:900px){
 
+     .logo{
+        width: 60px;
+        margin-right: 10px;
+    }
+    .nav-left ul li{
+        margin: 0px 10px;
+    }
+     header{
+        height: 75px;
+    }
+
+     .nav-left .nav-menu{
+        display: none;
+        position: absolute;
+        top: 75px; /* header ke niche */
+        left: 0;
+        background: #fff;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+        box-shadow: 0 4px 12px rgba(0,0,0,.1);
+    }
+
+    .nav-left .nav-menu.showData{
+        display: flex;
+    }
+
+    .nav-left .nav-menu li{
+        display: block;
+        margin: 12px 0;
+        font-size: 14px;
+    }
+
+    .nav-left i{
+        display: block;
+        cursor: pointer;
+    }
+
+    .search-box{
+        position: absolute;
+        top: 80px;
+        width: 97%;
+        left: 0;
+        border-radius: 50px;
+        background-color: #fff;
+        border: 1px solid #eee;
+    }
+
+    .nav-menu{
+        margin: 0 8px;
+    }
+
+     .nav-right div{
+        margin: 0 7px;
+    }
+    .nav-right p{
+        font-size: 0 10px;
+    }
+
+
+}
+
+@media only screen and (max-width:1250px){
     .search-box{
         position: absolute;
         top: 85px;
